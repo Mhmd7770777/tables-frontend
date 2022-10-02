@@ -1,11 +1,13 @@
-import ArtistsTable from "../components/Organisms/ArtistsTable/ArtistsTable";
-import LoginForm from "../components/Organisms/LoginForm/LoginForm";
+import React from "react";
 
-export default function Home() {
+import Homepage from "../components/Template/Homepage";
+
+const Home = () => {
   return (
-    <div>
-      <LoginForm />
-      <ArtistsTable />
-    </div>
+    <>
+      <Homepage />
+    </>
   );
-}
+};
+
+export default Home;
