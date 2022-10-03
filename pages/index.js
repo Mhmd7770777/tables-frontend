@@ -1,9 +1,13 @@
-import LoginForm from "../components/Organisms/LoginForm/LoginForm";
+import React from "react";
 
-export default function Home() {
+import Homepage from "../components/Template/Homepage";
+
+const Home = () => {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <>
+      <Homepage />
+    </>
   );
-}
+};
+
+export default Home;

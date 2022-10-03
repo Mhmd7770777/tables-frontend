@@ -75,7 +75,7 @@ const LoginForm = () => {
         >
           {logging ? (
             <Button type="primary" htmlType="submit">
-              Submit
+              Login
             </Button>
           ) : (
             <Button type="primary" htmlType="submit">
