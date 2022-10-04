@@ -73,28 +73,31 @@ const LoginForm = () => {
             span: 16,
           }}
         >
-          {logging ? (
-            <Button type="primary" htmlType="submit">
-              Login
-            </Button>
-          ) : (
-            <Button type="primary" htmlType="submit">
-              Register
-            </Button>
-          )}
-          {logging ? (
-            <Button type="primary" onClick={() => setLogging(false)}>
-              Register
-            </Button>
-          ) : (
-            <Button
-              className="marginned"
-              type="primary"
-              onClick={() => setLogging(true)}
-            >
-              Already have an account
-            </Button>
-          )}
+          <div className={`wrapper ${!logging && "seperated"}`}>
+            {logging ? (
+              <Button type="primary" htmlType="submit">
+                Login
+              </Button>
+            ) : (
+              <Button type="primary" htmlType="submit">
+                Register
+              </Button>
+            )}
+
+            {logging ? (
+              <Button type="primary" onClick={() => setLogging(false)}>
+                Register
+              </Button>
+            ) : (
+              <Button
+                className="marginned"
+                type="primary"
+                onClick={() => setLogging(true)}
+              >
+                Already have an account
+              </Button>
+            )}
+          </div>
         </Form.Item>
       </Form>
     </StyledContainer>
