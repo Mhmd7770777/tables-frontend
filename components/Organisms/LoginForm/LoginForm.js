@@ -87,7 +87,11 @@ const LoginForm = () => {
               Register
             </Button>
           ) : (
-            <Button type="primary" onClick={() => setLogging(true)}>
+            <Button
+              className="marginned"
+              type="primary"
+              onClick={() => setLogging(true)}
+            >
               Already have an account
             </Button>
           )}

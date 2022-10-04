@@ -6,7 +6,7 @@ const columns = [
     title: "Name",
     dataIndex: "name",
     key: "name",
-    render: (text) => <a>{text}</a>,
+    render: (text) => <a href={`/desc/${key}`}>{text}</a>,
   },
   {
     title: "Age",
@@ -45,8 +45,8 @@ const columns = [
     key: "action",
     render: (_, record) => (
       <Space size="middle">
-        <a>Invite {record.name}</a>
-        <a>Delete</a>
+        <a href={`/update/${record.name}`}>Update</a>
+        <a href={`/delete/${record.name}`}>Delete</a>
       </Space>
     ),
   },
