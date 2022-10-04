@@ -6,7 +6,6 @@ const columns = [
     title: "Name",
     dataIndex: "name",
     key: "name",
-    render: (text) => <a href={`/desc/${key}`}>{text}</a>,
   },
   {
     title: "Age",
